@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark-modern" data-accent="cyan" data-radius="rounded">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="StyleCraft Studio — a web design agency crafting digital experiences. Explore our work, design system and interactive design studio." />
+<meta name="theme-color" content="#070a12" />
+<title>StyleCraft Studio — We Craft Digital Experiences</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300e5ff'/%3E%3Cstop offset='1' stop-color='%237c4dff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='%23070a12'/%3E%3Cpath d='M10 22c2.2 0 3-12 5.5-12S19 22 22 22' stroke='url(%23g)' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- ============ BACKGROUND FX ============ -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="fx-grid"></div>
+  <div class="fx-orb fx-orb--1"></div>
+  <div class="fx-orb fx-orb--2"></div>
+  <div class="fx-orb fx-orb--3"></div>
+  <div class="fx-noise"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner glass">
+    <a href="#home" class="brand" data-scroll>
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+          <path d="M8 23c2.4 0 3.3-14 6-14s3.6 14 6 14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="23.5" cy="9.5" r="2.5" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand__text">StyleCraft<span class="brand__dot">.</span>Studio</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link is-active" data-scroll>Home</a>
+      <a href="#work" class="nav__link" data-scroll>Work</a>
+      <a href="#kit" class="nav__link" data-scroll>UI Kit</a>
+      <a href="#process" class="nav__link" data-scroll>Process</a>
+      <a href="#contact" class="nav__link" data-scroll>Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="btn btn--ghost btn--sm nav__studio" type="button" data-open-playground aria-label="Open design studio">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        <span>Studio</span>
+      </button>
+      <a href="#contact" class="btn btn--primary btn--sm" data-scroll>Start a Project</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__spot" id="heroSpot" aria-hidden="true"></div>
+    <div class="container hero__inner">
+
+      <span class="badge badge--pulse reveal">
+        <span class="badge__dot"></span>
+        Design Studio · Now booking Q4 2026
+        <span class="badge__arrow" aria-hidden="true">→</span>
+      </span>
+
+      <h1 class="hero__title reveal" data-delay="1">
+        <span class="word" style="--i:0">We</span>
+        <span class="word" style="--i:1">Craft</span>
+        <span class="word grad-text" style="--i:2">Digital</span>
+        <span class="word grad-text" style="--i:3">Experiences</span>
+      </h1>
+
+      <p class="hero__sub reveal" data-delay="2">
+        We are <strong>StyleCraft Studio</strong> — a design &amp; engineering team building
+        <span class="rotator" id="rotator"><span class="rotator__item is-on">fintech products</span><span class="rotator__item">commerce brands</span><span class="rotator__item">SaaS dashboards</span><span class="rotator__item">AI interfaces</span></span>
+        that feel effortless, look unforgettable and scale cleanly.
+      </p>
+
+      <div class="hero__cta reveal" data-delay="3">
+        <a href="#work" class="btn btn--primary btn--lg" data-scroll>
+          Explore Work
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button type="button" class="btn btn--outline btn--lg" data-open-playground>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="14" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="15" r="2.5"/><path d="M12 22a10 10 0 110-20"/></svg>
+          Try Design Studio
+        </button>
+      </div>
+
+      <div class="hero__meta reveal" data-delay="4">
+        <div class="hero__avatars" aria-hidden="true">
+          <span style="--a:0">AK</span><span style="--a:1">RM</span><span style="--a:2">JD</span><span style="--a:3">+</span>
+        </div>
+        <p><strong>14 designers &amp; engineers</strong> · trusted by 60+ teams worldwide</p>
+      </div>
+
+      <!-- App preview mockup -->
+      <div class="mock reveal" data-delay="5" data-tilt>
+        <div class="mock__glow" aria-hidden="true"></div>
+        <div class="mock__bar">
+          <span class="mock__dots"><i></i><i></i><i></i></span>
+          <span class="mock__url"><span class="lock" aria-hidden="true">◍</span> stylecraft.studio / design-system</span>
+          <span class="mock__chip">Live tokens</span>
+        </div>
+        <div class="mock__body">
+          <aside class="mock__side">
+            <p class="mock__label">Layers</p>
+            <ul class="mock__layers">
+              <li class="is-active"><i class="ly ly--sq"></i> Hero / Headline</li>
+              <li><i class="ly ly--ci"></i> Badge</li>
+              <li><i class="ly ly--rc"></i> CTA Button</li>
+              <li><i class="ly ly--sq"></i> Card Grid</li>
+              <li><i class="ly ly--ci"></i> Accent Orb</li>
+            </ul>
+            <p class="mock__label">Tokens</p>
+            <ul class="mock__tokens">
+              <li><span>accent</span><b class="swatch"></b></li>
+              <li><span>radius</span><b data-token-radius>12px</b></li>
+              <li><span>blur</span><b>18px</b></li>
+            </ul>
+          </aside>
+          <div class="mock__canvas">
+            <div class="canvas-art">
+              <span class="ca ca--1"></span>
+              <span class="ca ca--2"></span>
+              <span class="ca ca--3"></span>
+              <span class="ca ca--4"></span>
+            </div>
+            <div class="canvas-card glass">
+              <span class="canvas-card__t">Conversion uplift</span>
+              <span class="canvas-card__v" data-count="148" data-suffix="%">0%</span>
+              <span class="canvas-card__spark" aria-hidden="true">
+                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,26 14,20 28,23 42,12 56,16 70,7 84,10 100,3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+          <aside class="mock__panel">
+            <p class="mock__label">Inspect</p>
+            <div class="insp"><span>Fill</span><b><i class="swatch"></i> accent/500</b></div>
+            <div class="insp"><span>Radius</span><b data-token-radius>12px</b></div>
+            <div class="insp"><span>Shadow</span><b>elevation/3</b></div>
+            <div class="insp"><span>Weight</span><b>Semi Bold</b></div>
+            <div class="insp insp--bar"><span>Contrast</span><b>AA ✓</b></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-label="Selected clients">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span>Novabank</span><span aria-hidden="true">·</span><span>Lumen &amp; Co</span><span aria-hidden="true">·</span><span>Metricore</span><span aria-hidden="true">·</span><span>Pulse Health</span><span aria-hidden="true">·</span><span>Wanderline</span><span aria-hidden="true">·</span><span>Synthia AI</span><span aria-hidden="true">·</span><span>Orbit Labs</span><span aria-hidden="true">·</span><span>Kite Financial</span><span aria-hidden="true">·</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span>Novabank</span><span>·</span><span>Lumen &amp; Co</span><span>·</span><span>Metricore</span><span>·</span><span>Pulse Health</span><span>·</span><span>Wanderline</span><span>·</span><span>Synthia AI</span><span>·</span><span>Orbit Labs</span><span>·</span><span>Kite Financial</span><span>·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="eyebrow"><i></i> Selected work</span>
+        <h2 class="sec-title">Projects that <span class="grad-text">move the needle</span></h2>
+        <p class="sec-sub">Six recent engagements — from fintech onboarding flows to full commerce rebrands. Every build ships with a documented design system.</p>
+      </header>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All <span class="chip__n">6</span></button>
+        <button class="chip" type="button" data-filter="product" aria-pressed="false">Product <span class="chip__n">4</span></button>
+        <button class="chip" type="button" data-filter="brand" aria-pressed="false">Brand <span class="chip__n">2</span></button>
+        <button class="chip" type="button" data-filter="web" aria-pressed="false">Website <span class="chip__n">4</span></button>
+      </div>
+
+      <div class="work-grid" id="workGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ UI KIT ============ -->
+  <section class="section section--alt" id="kit">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="eyebrow"><i></i> Design system</span>
+        <h2 class="sec-title">UI kit, <span class="grad-text">live-themed</span></h2>
+        <p class="sec-sub">Every component below is styled with the same CSS variables the studio panel edits. Change a token — watch the whole kit re-skin.</p>
+      </header>
+
+      <div class="kit reveal">
+        <div class="kit__tabs" role="tablist" aria-label="UI kit sections">
+          <button class="kit__tab is-active" role="tab" aria-selected="true" data-tab="buttons" type="button">Buttons</button>
+          <button class="kit__tab" role="tab" aria-selected="false" data-tab="inputs" type="button">Inputs</button>
+          <button class="kit__tab" role="tab" aria-selected="false" data-tab="toggles" type="button">Toggles</button>
+          <button class="kit__tab" role="tab" aria-selected="false" data-tab="surfaces" type="button">Surfaces</button>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="kit__panel is-active" data-panel="buttons" role="tabpanel">
+          <div class="kit__demo">
+            <div class="kit__row">
+              <button class="btn btn--primary" type="button">Primary</button>
+              <button class="btn btn--outline" type="button">Outline</button>
+              <button class="btn btn--ghost" type="button">Ghost</button>
+              <button class="btn btn--soft" type="button">Soft</button>
+              <button class="btn btn--primary" type="button" disabled>Disabled</button>
+            </div>
+            <div class="kit__row">
+              <button class="btn btn--primary btn--sm" type="button">Small</button>
+              <button class="btn btn--primary" type="button">Medium</button>
+              <button class="btn btn--primary btn--lg" type="button">Large</button>
+              <button class="btn btn--icon btn--outline" type="button" aria-label="Favourite">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 000-7.8z"/></svg>
+              </button>
+              <button class="btn btn--primary" type="button" data-loading-btn>
+                <span class="btn__label">Send request</span>
+              </button>
+            </div>
+            <div class="kit__row kit__row--center">
+              <span class="tag tag--solid">Solid tag</span>
+              <span class="tag tag--soft">Soft tag</span>
+              <span class="tag tag--outline">Outline</span>
+              <span class="tag tag--dot">In progress</span>
+              <span class="tag tag--count">24</span>
+              <span class="tag tag--new">New</span>
+            </div>
+          </div>
+          <div class="kit__note">
+            <b>Interaction states</b>
+            <p>Hover lifts 2px with an accent glow, active scales to 0.97, focus-visible draws a 2px accent ring. All radii inherit <code data-token-radius>12px</code>.</p>
+          </div>
+        </div>
+
+        <!-- INPUTS -->
+        <div class="kit__panel" data-panel="inputs" role="tabpanel">
+          <div class="kit__demo kit__demo--grid">
+            <div class="field">
+              <label class="field__label" for="k-name">Full name</label>
+              <div class="field__wrap">
+                <svg class="field__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input id="k-name" class="input" type="text" placeholder="Ada Lovelace" autocomplete="off" />
+              </div>
+              <p class="field__hint">We only use this to address you.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="k-mail">Work email</label>
+              <div class="field__wrap">
+                <input id="k-mail" class="input" type="email" placeholder="ada@company.com" autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="field field--invalid">
+              <label class="field__label" for="k-err">Project budget</label>
+              <div class="field__wrap">
+                <input id="k-err" class="input" type="text" value="0" aria-invalid="true" />
+              </div>
+              <p class="field__error">Enter a value above $5,000 to continue.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="k-sel">Engagement</label>
+              <div class="field__wrap field__wrap--select">
+                <select id="k-sel" class="input">
+                  <option>Design sprint (2 weeks)</option>
+                  <option>Full product design</option>
+                  <option>Design system build</option>
+                  <option>Fractional design team</option>
+                </select>
+                <svg class="field__caret" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+
+            <div class="field field--wide">
+              <label class="field__label" for="k-msg">Brief</label>
+              <div class="field__wrap">
+                <textarea id="k-msg" class="input input--area" rows="3" placeholder="Tell us what you're building…"></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="k-dis">Promo code</label>
+              <div class="field__wrap">
+                <input id="k-dis" class="input" type="text" value="STUDIO-2026" disabled />
+              </div>
+              <p class="field__hint">Disabled state at 45% opacity.</p>
+            </div>
+          </div>
+          <div class="kit__note">
+            <b>Micro-interactions</b>
+            <p>Focus widens the field shadow to a 4px accent halo and floats the icon to accent colour. Errors shake once, then settle.</p>
+          </div>
+        </div>
+
+        <!-- TOGGLES -->
+        <div class="kit__panel" data-panel="toggles" role="tabpanel">
+          <div class="kit__demo kit__demo--grid">
+            <div class="switch-row">
+              <div class="switch-copy"><b>Email digest</b><span>Weekly summary every Friday</span></div>
+              <label class="switch"><input type="checkbox" checked /><span class="switch__track"><span class="switch__knob"></span></span></label>
+            </div>
+            <div class="switch-row">
+              <div class="switch-copy"><b>Dark preview</b><span>Render prototypes in dark mode</span></div>
+              <label class="switch"><input type="checkbox" /><span class="switch__track"><span class="switch__knob"></span></span></label>
+            </div>
+            <div class="switch-row">
+              <div class="switch-copy"><b>Auto-layout</b><span>Locked for enterprise plans</span></div>
+              <label class="switch switch--disabled"><input type="checkbox" disabled /><span class="switch__track"><span class="switch__knob"></span></span></label>
+            </div>
+
+            <div class="choice-group">
+              <b class="choice-title">Checkboxes</b>
+              <label class="check"><input type="checkbox" checked /><span class="check__box"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Design</label>
+              <label class="check"><input type="checkbox" checked /><span class="check__box"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Front-end</label>
+              <label class="check"><input type="checkbox" /><span class="check__box"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Motion</label>
+            </div>
+
+            <div class="choice-group">
+              <b class="choice-title">Radio</b>
+              <label class="check check--radio"><input type="radio" name="kit-plan" checked /><span class="check__box"></span> Sprint</label>
+              <label class="check check--radio"><input type="radio" name="kit-plan" /><span class="check__box"></span> Retainer</label>
+              <label class="check check--radio"><input type="radio" name="kit-plan" /><span class="check__box"></span> One-off</label>
+            </div>
+
+            <div class="slider-block">
+              <div class="slider-head"><b>Accent intensity</b><span id="rangeOut">72%</span></div>
+              <input id="rangeDemo" class="range" type="range" min="0" max="100" value="72" aria-label="Accent intensity" />
+            </div>
+          </div>
+          <div class="kit__note">
+            <b>State machine</b>
+            <p>Knobs travel with a spring curve; tracks glow on check. Disabled inputs drop to 40% and block pointer events.</p>
+          </div>
+        </div>
+
+        <!-- SURFACES -->
+        <div class="kit__panel" data-panel="surfaces" role="tabpanel">
+          <div class="kit__demo kit__demo--cards">
+            <article class="card glass card--lift">
+              <span class="card__icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></span>
+              <h4>Glass card</h4>
+              <p>Backdrop blur, 1px hairline border and an inner top highlight.</p>
+              <span class="card__link">Read docs <i>→</i></span>
+            </article>
+
+            <article class="stat-card glass">
+              <span class="stat-card__label">Avg. conversion lift</span>
+              <span class="stat-card__value grad-text">+48%</span>
+              <div class="bar"><i style="--w:78%"></i></div>
+            </article>
+
+            <article class="person glass">
+              <span class="person__ava">RM</span>
+              <div><b>Riya Menon</b><span>Design Director</span></div>
+              <button class="btn btn--soft btn--sm" type="button">Follow</button>
+            </article>
+
+            <article class="toast-card glass">
+              <span class="toast-card__ico">✓</span>
+              <div><b>Deployed to production</b><span>v2.4.0 · 2 minutes ago</span></div>
+              <button class="icon-btn" type="button" aria-label="Dismiss">✕</button>
+            </article>
+          </div>
+          <div class="kit__note">
+            <b>Elevation</b>
+            <p>Three elevation levels, each with a hairline top highlight. Hover raises the card and blooms an accent shadow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <header class="sec-head reveal">
+        <span class="eyebrow"><i></i> How we work</span>
+        <h2 class="sec-title">A process built for <span class="grad-text">momentum</span></h2>
+        <p class="sec-sub">Four phases, two-week cadence, one shared board. You see working software at the end of every sprint.</p>
+      </header>
+
+      <div class="steps">
+        <article class="step glass reveal" data-delay="1">
+          <span class="step__n">01</span>
+          <h3>Discover</h3>
+          <p>Stakeholder interviews, analytics audit and a competitor teardown. We map the problem before drawing a single frame.</p>
+          <ul class="step__list"><li>Research synthesis</li><li>Jobs-to-be-done</li></ul>
+        </article>
+        <article class="step glass reveal" data-delay="2">
+          <span class="step__n">02</span>
+          <h3>Design</h3>
+          <p>Wireframes to high-fidelity prototypes with tokens already wired in — so handoff is a config change, not a rewrite.</p>
+          <ul class="step__list"><li>Design tokens</li><li>Interactive prototypes</li></ul>
+        </article>
+        <article class="step glass reveal" data-delay="3">
+          <span class="step__n">03</span>
+          <h3>Build</h3>
+          <p>Component-driven front-end with accessibility, performance budgets and CI checks baked in from the first commit.</p>
+          <ul class="step__list"><li>Accessibility AA</li><li>Performance budget</li></ul>
+        </article>
+        <article class="step glass reveal" data-delay="4">
+          <span class="step__n">04</span>
+          <h3>Launch</h3>
+          <p>Instrumented release, cohort analytics and a 30-day tuning window. We stay until the numbers move.</p>
+          <ul class="step__list"><li>Analytics setup</li><li>Post-launch tuning</li></ul>
+        </article>
+      </div>
+
+      <div class="stats glass reveal">
+        <div class="stat"><b class="grad-text" data-count="140" data-suffix="+">0</b><span>Projects shipped</span></div>
+        <div class="stat"><b class="grad-text" data-count="38" data-suffix="">0</b><span>Design awards</span></div>
+        <div class="stat"><b class="grad-text" data-count="96" data-suffix="%">0</b><span>Client retention</span></div>
+        <div class="stat"><b class="grad-text" data-count="12" data-suffix="w">0</b><span>Avg. to launch</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="contact">
+        <div class="contact__aside reveal">
+          <span class="eyebrow"><i></i> Let's talk</span>
+          <h2 class="sec-title">Start your <span class="grad-text">next build</span></h2>
+          <p class="sec-sub">Tell us about the product. We reply within one business day with a scoped plan, a timeline and a fixed price.</p>
+          <ul class="contact__facts">
+            <li><b>Email</b><span>hello@stylecraft.studio</span></li>
+            <li><b>Studio</b><span>Bengaluru · Remote worldwide</span></li>
+            <li><b>Availability</b><span><i class="pulse-dot"></i> 2 sprint slots open</span></li>
+          </ul>
+        </div>
+
+        <form class="contact__form glass reveal" id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label" for="c-name">Full name <i>*</i></label>
+              <div class="field__wrap">
+                <input id="c-name" name="name" class="input" type="text" placeholder="Ada Lovelace" autocomplete="name" />
+              </div>
+              <p class="field__error" data-error-for="name"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="c-email">Work email <i>*</i></label>
+              <div class="field__wrap">
+                <input id="c-email" name="email" class="input" type="email" placeholder="ada@company.com" autocomplete="email" />
+              </div>
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="c-company">Company</label>
+              <div class="field__wrap">
+                <input id="c-company" name="company" class="input" type="text" placeholder="Novabank" autocomplete="organization" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="c-type">Project type <i>*</i></label>
+              <div class="field__wrap field__wrap--select">
+                <select id="c-type" name="type" class="input">
+                  <option value="">Select an option…</option>
+                  <option>Product design</option>
+                  <option>Brand &amp; website</option>
+                  <option>Design system</option>
+                  <option>Front-end build</option>
+                  <option>Something else</option>
+                </select>
+                <svg class="field__caret" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <p class="field__error" data-error-for="type"></p>
+            </div>
+
+            <div class="field field--wide">
+              <label class="field__label" for="c-budget">Budget range</label>
+              <div class="budget" id="budgetGroup" role="radiogroup" aria-label="Budget range">
+                <button type="button" class="budget__opt" data-value="$10–25k">$10–25k</button>
+                <button type="button" class="budget__opt" data-value="$25–50k">$25–50k</button>
+                <button type="button" class="budget__opt" data-value="$50–100k">$50–100k</button>
+                <button type="button" class="budget__opt" data-value="$100k+">$100k+</button>
+              </div>
+              <input type="hidden" name="budget" id="c-budget" />
+            </div>
+
+            <div class="field field--wide">
+              <label class="field__label" for="c-message">Project brief <i>*</i></label>
+              <div class="field__wrap">
+                <textarea id="c-message" name="message" class="input input--area" rows="4" placeholder="What are you building, who is it for, and what does success look like?"></textarea>
+                <span class="counter" id="msgCounter">0 / 600</span>
+              </div>
+              <p class="field__error" data-error-for="message"></p>
+            </div>
+
+            <div class="field field--wide">
+              <label class="check check--agree">
+                <input type="checkbox" name="agree" id="c-agree" />
+                <span class="check__box"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <span>Send me the studio's monthly design-letter — no spam, ever.</span>
+              </label>
+              <p class="field__error" data-error-for="agree"></p>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn--primary btn--lg" type="submit" id="submitBtn">
+              <span class="btn__label">Send brief</span>
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-foot__note">Or email <a href="mailto:hello@stylecraft.studio">hello@stylecraft.studio</a></p>
+          </div>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <span class="form-success__ico">✓</span>
+            <h3>Brief received</h3>
+            <p>Thanks — we'll come back within one business day with next steps.</p>
+            <button class="btn btn--outline btn--sm" type="button" id="resetForm">Send another</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="brand" data-scroll>
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+            <path d="M8 23c2.4 0 3.3-14 6-14s3.6 14 6 14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="23.5" cy="9.5" r="2.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand__text">StyleCraft<span class="brand__dot">.</span>Studio</span>
+      </a>
+      <p>A design &amp; engineering studio crafting interfaces people actually enjoy using.</p>
+      <div class="footer__social">
+        <a class="icon-btn" href="#home" data-scroll aria-label="Dribbble">Dr</a>
+        <a class="icon-btn" href="#home" data-scroll aria-label="Behance">Be</a>
+        <a class="icon-btn" href="#home" data-scroll aria-label="GitHub">Gh</a>
+        <a class="icon-btn" href="#home" data-scroll aria-label="LinkedIn">In</a>
+      </div>
+    </div>
+    <nav class="footer__cols" aria-label="Footer">
+      <div><h5>Studio</h5><a href="#work" data-scroll>Work</a><a href="#process" data-scroll>Process</a><a href="#kit" data-scroll>Design system</a></div>
+      <div><h5>Services</h5><a href="#contact" data-scroll>Product design</a><a href="#contact" data-scroll>Brand identity</a><a href="#contact" data-scroll>Front-end build</a></div>
+      <div><h5>Contact</h5><a href="mailto:hello@stylecraft.studio">hello@stylecraft.studio</a><a href="#contact" data-scroll>Book a call</a><a href="#contact" data-scroll>Brief template</a></div>
+    </nav>
+  </div>
+  <div class="container footer__base">
+    <p>© <span id="year">2026</span> StyleCraft Studio. All rights reserved.</p>
+    <p>Built with HTML, CSS &amp; vanilla JS — <button class="linkish" type="button" data-open-playground>open the design studio</button></p>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTIONS ============ -->
+<div class="fab-stack">
+  <button class="fab fab--contact" type="button" id="openContact" aria-label="Quick brief">
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 9.9 9.9 0 01-3.6-.7L3 21l1.9-5A8.1 8.1 0 013.6 11 8.4 8.4 0 0112 3a8.4 8.4 0 019 8.5z"/></svg>
+  </button>
+  <button class="fab fab--studio" type="button" data-open-playground id="fabStudio" aria-label="Open design studio">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg>
+  </button>
+</div>
+
+<!-- ============ DESIGN TOKEN PLAYGROUND ============ -->
+<div class="scrim" id="scrim" hidden></div>
+
+<aside class="studio" id="studio" aria-label="Design token playground" aria-hidden="true">
+  <header class="studio__head">
+    <div>
+      <span class="studio__eyebrow"><i class="pulse-dot"></i> Design studio</span>
+      <h3 class="studio__title">Token playground</h3>
+    </div>
+    <button class="icon-btn" type="button" data-close-studio aria-label="Close studio">✕</button>
+  </header>
+
+  <div class="studio__body">
+    <section class="studio__group">
+      <div class="studio__label"><span>01</span> Theme mode</div>
+      <div class="theme-grid" id="themeGrid" role="radiogroup" aria-label="Theme mode">
+        <button class="theme-card" type="button" data-theme-value="dark-modern" role="radio">
+          <span class="theme-card__preview" data-preview="dark-modern"><i></i><i></i><i></i></span>
+          <b>Dark Modern</b><small>Glass · depth</small>
+        </button>
+        <button class="theme-card" type="button" data-theme-value="light-clean" role="radio">
+          <span class="theme-card__preview" data-preview="light-clean"><i></i><i></i><i></i></span>
+          <b>Light Clean</b><small>Airy · editorial</small>
+        </button>
+        <button class="theme-card" type="button" data-theme-value="neo-brutalism" role="radio">
+          <span class="theme-card__preview" data-preview="neo-brutalism"><i></i><i></i><i></i></span>
+          <b>Neo-Brutalism</b><small>Bold · raw</small>
+        </button>
+        <button class="theme-card" type="button" data-theme-value="cyberpunk" role="radio">
+          <span class="theme-card__preview" data-preview="cyberpunk"><i></i><i></i><i></i></span>
+          <b>Cyberpunk</b><small>Neon · contrast</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="studio__group">
+      <div class="studio__label"><span>02</span> Accent colour</div>
+      <div class="pills" id="accentPills" role="radiogroup" aria-label="Accent colour">
+        <button class="pill" type="button" data-accent-value="cyan" role="radio" style="--p:187 92% 52%"><i></i>Cyan</button>
+        <button class="pill" type="button" data-accent-value="violet" role="radio" style="--p:262 92% 66%"><i></i>Electric Violet</button>
+        <button class="pill" type="button" data-accent-value="emerald" role="radio" style="--p:158 84% 42%"><i></i>Emerald</button>
+        <button class="pill" type="button" data-accent-value="sunset" role="radio" style="--p:18 96% 56%"><i></i>Sunset Orange</button>
+      </div>
+    </section>
+
+    <section class="studio__group">
+      <div class="studio__label"><span>03</span> Border radius</div>
+      <div class="segmented" id="radiusSeg" role="radiogroup" aria-label="Border radius">
+        <button class="segmented__opt" type="button" data-radius-value="sharp" role="radio"><span class="seg-shape" style="border-radius:0"></span>Sharp<em>0px</em></button>
+        <button class="segmented__opt" type="button" data-radius-value="rounded" role="radio"><span class="seg-shape" style="border-radius:6px"></span>Rounded<em>12px</em></button>
+        <button class="segmented__opt" type="button" data-radius-value="pill" role="radio"><span class="seg-shape" style="border-radius:14px"></span>Pill<em>24px</em></button>
+      </div>
+      <div class="radius-scale">
+        <span style="border-radius:var(--r-xs)">xs</span>
+        <span style="border-radius:var(--r-sm)">sm</span>
+        <span style="border-radius:var(--r-md)">md</span>
+        <span style="border-radius:var(--r-lg)">lg</span>
+        <span style="border-radius:var(--r-xl)">xl</span>
+      </div>
+    </section>
+
+    <section class="studio__group">
+      <div class="studio__label"><span>04</span> Live tokens</div>
+      <div class="code">
+        <div><span class="c-k">--accent</span><span class="c-v" id="tokAccent">hsl(187 92% 52%)</span></div>
+        <div><span class="c-k">--radius-md</span><span class="c-v" id="tokRadius">12px</span></div>
+        <div><span class="c-k">--surface</span><span class="c-v" id="tokSurface">glass 18px</span></div>
+        <div><span class="c-k">--theme</span><span class="c-v" id="tokTheme">dark-modern</span></div>
+      </div>
+      <div class="studio__actions">
+        <button class="btn btn--outline btn--sm" type="button" id="randomBtn">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M21 3l-7 7"/><path d="M3 3l7 7"/><path d="M21 16v5h-5"/><path d="M3 16v5h5"/><path d="M21 21l-7-7"/><path d="M3 21l7-7"/></svg>
+          Surprise me
+        </button>
+        <button class="btn btn--ghost btn--sm" type="button" id="resetBtn">Reset</button>
+      </div>
+      <p class="studio__hint"><kbd>Shift</kbd> + <kbd>D</kbd> toggles this panel · prefs saved locally</p>
+    </section>
+  </div>
+</aside>
+
+<!-- ============ CASE STUDY MODAL ============ -->
+<div class="modal" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="caseTitle" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__panel glass" role="document">
+    <button class="icon-btn modal__close" type="button" data-close-modal aria-label="Close">✕</button>
+    <div class="modal__hero" id="caseHero">
+      <div class="modal__hero-art" id="caseArt"></div>
+      <div class="modal__hero-copy">
+        <div class="modal__tags" id="caseTags"></div>
+        <h2 id="caseTitle">Project</h2>
+        <p id="caseBlurb">Blurb</p>
+      </div>
+    </div>
+    <div class="modal__body">
+      <div class="modal__meta" id="caseMeta"></div>
+      <div class="modal__cols">
+        <div>
+          <h4>Challenge</h4><p id="caseChallenge"></p>
+          <h4>Approach</h4><p id="caseApproach"></p>
+        </div>
+        <div>
+          <h4>Outcome</h4><p id="caseOutcome"></p>
+          <div class="modal__metrics" id="caseMetrics"></div>
+          <h4>What we shipped</h4>
+          <ul class="modal__deliverables" id="caseDeliverables"></ul>
+        </div>
+      </div>
+      <div class="modal__palette">
+        <span>Palette</span>
+        <div id="casePalette"></div>
+      </div>
+      <div class="modal__foot">
+        <a href="#contact" class="btn btn--primary" data-scroll data-close-modal>Start a project like this</a>
+        <button class="btn btn--ghost" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ QUICK BRIEF MODAL ============ -->
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="qmTitle" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__panel modal__panel--sm glass" role="document">
+    <button class="icon-btn modal__close" type="button" data-close-modal aria-label="Close">✕</button>
+    <h2 id="qmTitle" class="modal__title">Quick brief</h2>
+    <p class="modal__lede">Three fields. We'll reply within one business day.</p>
+    <form id="quickForm" novalidate>
+      <div class="field">
+        <label class="field__label" for="q-name">Name <i>*</i></label>
+        <div class="field__wrap"><input id="q-name" name="name" class="input" type="text" placeholder="Ada Lovelace" /></div>
+        <p class="field__error" data-error-for="name"></p>
+      </div>
+      <div class="field">
+        <label class="field__label" for="q-email">Email <i>*</i></label>
+        <div class="field__wrap"><input id="q-email" name="email" class="input" type="email" placeholder="ada@company.com" /></div>
+        <p class="field__error" data-error-for="email"></p>
+      </div>
+      <div class="field">
+        <label class="field__label" for="q-message">What do you need? <i>*</i></label>
+        <div class="field__wrap"><textarea id="q-message" name="message" class="input input--area" rows="3" placeholder="A mobile app redesign, Q1 2027…"></textarea></div>
+        <p class="field__error" data-error-for="message"></p>
+      </div>
+      <button class="btn btn--primary btn--block" type="submit" id="quickSubmit"><span class="btn__label">Send it</span></button>
+    </form>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
